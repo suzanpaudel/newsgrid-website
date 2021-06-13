@@ -147,6 +147,9 @@ p {
   background: var(--primary-color);
   color: #fff;
 }
+.bg-secondary {
+  background: var(--secondary-color);
+}
 
 .bg-dark {
   background: var(--dark-color);
@@ -306,4 +309,18 @@ p {
 
 #main-footer .footer-container input[type='submit'] {
   width: 90%;
+}
+
+/* Article page css */
+#article .meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #eee;
+  padding: 0.1rem 0.3rem;
+  border-radius: 5px;
+}
+
+#article .meta .category {
+  margin-top: 0.4rem;
 }
