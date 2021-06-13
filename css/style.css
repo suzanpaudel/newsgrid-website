@@ -71,6 +71,16 @@ p {
   overflow: hidden;
 }
 
+.page-container {
+  display: grid;
+  grid-template-columns: 5fr 2fr;
+  gap: 2rem;
+}
+
+.page-container > *:first-child {
+  grid-row: 1 / span 3;
+}
+
 .category {
   display: inline-block;
   color: #fff;
@@ -101,9 +111,9 @@ p {
   padding: 0.5rem 1.5rem;
 }
 
-.btn-light {
-  background: var(--light-color);
-  color: var(--dark-color);
+.btn-dark {
+  background: var(--dark-color);
+  color: var(--light-color);
 }
 
 .btn-primary {
@@ -131,6 +141,11 @@ p {
 .card {
   background: #fff;
   padding: 1rem;
+}
+
+.bg-primary {
+  background: var(--primary-color);
+  color: #fff;
 }
 
 .bg-dark {
