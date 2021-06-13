@@ -55,6 +55,10 @@ h1 {
   font-size: 2.25rem;
 }
 
+h2 {
+  font-size: 2rem;
+}
+
 p {
   margin-bottom: 1rem;
 }
@@ -122,6 +126,24 @@ p {
 
 .btn:focus {
   outline: 0;
+}
+
+.card {
+  background: #fff;
+  padding: 1rem;
+}
+
+.bg-dark {
+  background: var(--dark-color);
+  color: #fff;
+}
+
+.bg-dark h3 a {
+  color: #fff;
+}
+
+.py-2 {
+  padding: 2rem 0;
 }
 
 /* Navbar */
@@ -201,4 +223,24 @@ p {
 
 #showcase .showcase-content {
   z-index: 1;
+}
+
+/* Articles in the home page of website */
+#home-articles .articles-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+#home-articles .articles-container > *:first-child,
+#home-articles .articles-container > *:last-child {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.5rem;
+  align-items: center;
+  grid-column: 1 / span 2;
+}
+
+#home-articles .articles-container > *:last-child {
+  grid-column: 2 / span 2;
 }
